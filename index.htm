@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 min-h-screen font-sans">
+    <!-- wrapper -->
+     <main>
+
+        <!-- header -->
+        <header>
+            <h1>Expense Tracker</h1>
+            <p>Track your spending smartly, Captain.</p>
+        </header>
+
+        <!-- Add Expense Here -->
+         <section aria-label="Add Expense">
+            <form id="expenseForm" class="">
+                <input type="number" id="amount" placeholder="Amount (₹)" class="">
+                <input type="text" id="category" placeholder="Category (e.g. Food)" class="">
+                <input type="text" id="note" placeholder="Note" class="">
+                <input type="date" id="date" placeholder="" class="" required>
+                <button type="submit">Add Expense</button>
+            </form>
+         </section>
+
+         <!-- Search + Summary -->
+          <section aria-label="search and summary" class="">
+            <input type="text" id="searchInput" placeholder="Search expenses..." class="">
+            <aside is="summary" class="">  Total: ₹0 </aside>
+
+          </section>
+
+          <!-- expense list -->
+           <section aria-label="Expense List">
+            <ul id="expenseList" class="">
+
+            </ul>
+
+           </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
